@@ -132,7 +132,96 @@ class CardCenter extends StatelessWidget {
             child: Container(
               width: 500,
               height: 80,
-              color: Colors.red,
+              color: Color.fromRGBO(255, 254, 255, 1),
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    margin: EdgeInsets.only(left: 20, top: 30),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(right: 10),
+                          child: Icon(
+                            Icons.attach_money,
+                            color: Colors.black54,
+                            size: 60,
+                          ),
+                        ),
+                        Text(
+                          'Conta',
+                          style: TextStyle(color: Colors.black54, fontSize: 20),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(left: 30),
+                    child: Row(
+                      children: <Widget>[
+                        Container(
+                          margin: EdgeInsets.only(top: 30),
+                          child: Text(
+                            'Saldo disponível',
+                            style: TextStyle(
+                                color: Colors.black54,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(left: 30, top: 5),
+                        child: Text(
+                          'R 50,00',
+                          style: TextStyle(
+                              color: Colors.black54,
+                              fontSize: 40),
+                        ),
+                      )
+                    ],
+                  ),
+                  
+                  Row(
+                    children: <Widget>[
+                      Container(
+                        margin: EdgeInsets.only(top: 33),
+                        width: 331,
+                        height: 100,
+                        color: Color.fromRGBO(224, 224, 224, 1),
+                        child: Column(
+                          children: <Widget>[
+                            Container(
+                              margin: EdgeInsets.only(top: 20, left: 30),
+                              child: Row(
+                                children: <Widget>[
+                                  Container(
+                                    margin: EdgeInsets.only(right: 10),
+                                    child: Icon(
+                                      Icons.attach_money,
+                                      size: 40,
+                                      color: Colors.black54
+                                    ),
+                                  ),
+                                  Text(
+                                    'Transferencia de 300,00 \n recebida ontem',
+                                    style: TextStyle(
+                                      color: Colors.black54
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
           ),
         ],
