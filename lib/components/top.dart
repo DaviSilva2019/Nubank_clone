@@ -22,8 +22,7 @@ class Top extends StatelessWidget {
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
-                    fontSize:
-                      MediaQuery.of(context).size.width * 0.06),
+
                   ),
                 )
               ],
